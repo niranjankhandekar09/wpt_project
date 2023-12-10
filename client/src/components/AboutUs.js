@@ -41,6 +41,35 @@ function AboutUs() {
             <div className="container">
                 <NotLoggedInModal />
                 <h3>About us</h3>
+
+                <div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Monali Surani</h5>
+                    <p class="card-text">CDAC Mumbai</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Siddhesh Khairnar</h5>
+                    <p class="card-text">CDAC Mumbai</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Niranjan Khandekar</h5>
+                    <p class="card-text">CDAC Mumbai</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
                 
                
                         

@@ -71,7 +71,7 @@ const Quixote = () => (
                     <Text style={[styles.chargeSlipTHead, styles.bold]}></Text>
               </View>
               <View>
-                    <Text style={[styles.patientDetails, styles.bold]}>Alvin John E. Begana, RMT</Text>
+                    <Text style={[styles.patientDetails, styles.bold]}>Manoj More</Text>
                     <Text style={[styles.chargeSlipTHead, styles.bold]}></Text>
               </View>
         </View>

@@ -47,7 +47,7 @@ function UserLogin() {
             <div className="row justify-content-center">
                 <div className="col col-md-4 bg-white mt-5 p-4 rounded border border-dark d-flex flex-column justify-content-center">
                     <img src={logo} alt="logo" className="w-30 m-auto"/>
-                    <h4 className = "text-center">Laboratory Information System Login</h4>
+                    <h4 className = "text-center">Pathology-Lab Login</h4>
 
                     <form onSubmit={onSubmit}>
                     {msg && <div className='alert alert-danger text-center p-1 mb-1'>{msg}</div>}
@@ -72,10 +72,7 @@ function UserLogin() {
                         <br />
                         
                         <input onClick={onSubmit} className="btn btn-success col-sm-12" type="submit" value="Login" />
-                        <br></br>
-                        <div>
-                        <NavLink to="/register">New user ?</NavLink>
-                        </div>
+                        
                     </form>
                     
                     

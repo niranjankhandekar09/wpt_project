@@ -63,11 +63,11 @@ useEffect(() => {
     <AuthContext.Provider value={{authState, setAuthState}}>
       <Router>
         <Switch>
-            <Route path="/laboratory" exact component={LabClient} />
+            {/* <Route path="/laboratory" exact component={LabClient} />
             <Route path="/laboratory/chemistry" exact component={ChemForm} />
             <Route path="/laboratory/hematology" exact component={Hemaform} />
             <Route path="/laboratory/cm" exact component={Cmform} />
-            <Route path="/laboratory/sero" exact component={Seroform} />
+            <Route path="/laboratory/sero" exact component={Seroform} /> */}
             <Route path="/login" exact component={UserLogin} />
             <Route path="/register" exact component={UserReg} />
             <div style={bgStyle}>
@@ -79,7 +79,7 @@ useEffect(() => {
                       <li><Link to="/ptsearch">Patient Search</Link></li>
                       <li><Link to="/registerpatient">Patient Registration</Link></li>
                       <li><Link to="/orders">Orders</Link></li>
-                      <li><Link to="/laboratory">Laboratory</Link></li>
+                      {/* <li><Link to="/laboratory">Laboratory</Link></li> */}
                       <li><Link to="/results">Results</Link></li>
                       <li><Link to="/AboutUs">AboutUs</Link></li>
                   </ul>

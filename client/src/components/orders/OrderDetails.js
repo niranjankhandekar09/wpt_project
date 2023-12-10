@@ -158,24 +158,13 @@ function OrderDetails() {
                     </tbody>
                 </table>
 
-                {/*Generate Charge Slip*/}
-                
-                <PDFDownloadLink
-                    document={<ChargeSlip data={orderDetails[0]}/>}
-                    fileName={`CHARGE SLIP ${orderDetails[0].labNumber}`}
-                    className="btn btn-primary"
-                    data={orderDetails[0]}
-                    >
-                        {({ blob, url, loading, error }) =>
-                        loading ? 'Loading...' : 'Generate Charge Slip'
-                    }
-                </PDFDownloadLink>
+
                 {/* RELEASE FULL RESULTS */}
                 <GetFullResults includePrev={includePrev} prevResDetails={prevResDetails} PrevResData={PrevResData} show={generateShow} setShow={setGenerateShow} forOrderID={orderDetails[0].labNumber} />
                 
                 <PrintPrevModal generateFullRx={generateFullRx} setIncludePrev={setIncludePrev} setShow={setPrevModalShow} show={prevModalShow} />
                 
-                {orderDetails[0].status === "RELEASED" && <button onClick={()=>{generateFullRx(); ModalPrevShow()}}  className="btn btn-success"> Generate Full Results</button>}
+
                 {orderDetails[0].status !== "RELEASED" && <button onClick={onOrderDelete} className="btn btn-danger">Delete/Archive</button>}
                 
             
